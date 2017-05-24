@@ -22,10 +22,12 @@
 
 <ul>
   <%  @restaurant.reviews.each do |review| %>
-    <li> Review: <%= review.content %> | Rating: <%= review.rating %> on 5</li>
+    <li> <%= review.content %> | <%= review.rating %></li>
 
   <% end %>
 </ul>
 
+<%= link_to 'Edit', edit_admin_restaurant_path(@restaurant) %> |
 <%= link_to 'Back', restaurants_path %> |
 <%= link_to 'Add a review', new_restaurant_review_path(@restaurant) %> |
+

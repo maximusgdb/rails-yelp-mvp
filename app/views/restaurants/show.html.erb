@@ -1,3 +1,12 @@
+<% content_for(:title) do %>
+<%= @restaurant.name %> is on Yelp
+<% end %>
+
+<% content_for(:description) do %>
+<%= @restaurant.name %> is on Yelp.
+<% end %>
+
+
 <p id="notice"><%= notice %></p>
 
 <p>
